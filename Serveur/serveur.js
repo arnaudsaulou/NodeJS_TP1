@@ -19,7 +19,7 @@ wss.on('connection', function connection(ws, req) {
 
     ws.on('message', function incoming(data) {
         // On récupère le pseudo de l'emeteur
-        const emetteur = url.parse(req.url, true).query.pseudo
+        const emetteur = url.parse(req.url, true).query.pseudo;
 
         console.log('Nouveau message de %s : %s', emetteur, data);
 

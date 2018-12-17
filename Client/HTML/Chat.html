@@ -1,39 +1,58 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-        <title>Hello, world!</title>
-    </head>
+    <title>Hello, world!</title>
+</head>
 
-    <body>
+<body>
 
-        <h1>Bienvenue sur le super chat</h1>
+<!-- Message d'acceuil -->
+<h1>Bienvenue sur le super chat</h1>
 
-        <div id="chat_body">
+<!-- Corps principale-->
+<div class="row">
+    <!-- Corps du chat -->
+    <div id="chat_body" class="col-xs-12 col-md-10"></div>
 
+    <!-- Liste des membres (non fonctionel)-->
+    <div id="list_user" class="col-xs-6 col-md-2"><h1>Membres du chat</h1></div>
+</div>
+
+<form>
+
+    <!-- Bar de navigation en bas-->
+    <nav class="navbar fixed-bottom navbar-light bg-light">
+
+        <!-- Zone de text -->
+        <div class="col-10">
+            <input class="form-control" type="text" placeholder="Exprimez vous" id="textInput">
         </div>
 
-        <form>
-            <nav class="navbar fixed-bottom navbar-light bg-light">
+        <!-- Boutton pour envoyer le massage -->
+        <button id="bouttonEnvoyer" class="col-2" type="submit">Envoyer</button>
+    </nav>
+</form>
 
-                <div class="col-10">
-                    <input class="form-control" type="text" placeholder="Exprimez vous" id="textInput">
-                </div>
-                <button id="bouttonEnvoyer" class="col-2" type="submit">Envoyer</button>
-            </nav>
-        </form>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+<script src="../JS/Chat.js"></script>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="../JS/Chat.js"></script>
-
-    </body>
+</body>
 </html>

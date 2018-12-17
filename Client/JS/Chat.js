@@ -29,9 +29,6 @@ $(document).ready(
             var date = new Date();
             var classBadge;
 
-            console.log(JSON.parse(event.data).emetteur);
-            console.log(person);
-
             //Changement du badge en fonction de l'utilisateur
             if (JSON.parse(event.data).emetteur == person) {
                 classBadge = "<span class=\"badge badge-pill badge-info\">";
@@ -53,7 +50,6 @@ $(document).ready(
 
         });
 
-
         // Declaration des elements du document
         var bouttonEnvoyer = document.getElementById("bouttonEnvoyer");
 
@@ -68,7 +64,6 @@ $(document).ready(
             textInput.value = "";
             return false;
         }
-
 
     }
 );
